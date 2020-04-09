@@ -11,17 +11,20 @@
 
 <!--Uses Direct Access to Form Inputs to submit user typed input for Album Name or Title -->
 <form name="album" action="">
+    <label for="albumArtist">Band Name or Artist</label>
+    <input id="albumArtist" name="albumArtist" type="text">
     <label for="albumName">Album Name</label>
     <input id="albumName" name="albumName" type="text">
+
     <br>
     <input id="submit-album-name" type="submit">
 </form>
 
 <!--Uses Text Input to submit user typed input for the Artist or Band name-->
-<div>
-    <input type="text" id="albumArtist"><br>
-    <button type="button" id="btn-submit-album-artist">Submit Artist or Band Name</button>
-</div>
+<!--<div>-->
+<!--    <input type="text" id="albumArtist"><br>-->
+<!--    <button type="button" id="btn-submit-album-artist">Submit Artist or Band Name</button>-->
+<!--</div>-->
 
 <div id="album-info"></div>
 <div id="album-tracks"></div>
