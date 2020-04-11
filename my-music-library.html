@@ -9,25 +9,15 @@
 </head>
 <body>
 
-<!--Uses Direct Access to Form Inputs to submit user typed input for Album Name or Title -->
-<form name="album" action="">
-    <label for="albumArtist">Band Name or Artist</label>
-    <input id="albumArtist" name="albumArtist" type="text">
-    <label for="albumName">Album Name</label>
-    <input id="albumName" name="albumName" type="text">
-
+    <input id="albumArtist" name="albumArtist" type="text" placeholder="Band Name or Artist">
+    <input id="albumName" name="albumName" type="text" placeholder="Album Name">
     <br>
-    <input id="submit-album-name" type="submit">
-</form>
-
-<!--Uses Text Input to submit user typed input for the Artist or Band name-->
-<!--<div>-->
-<!--    <input type="text" id="albumArtist"><br>-->
-<!--    <button type="button" id="btn-submit-album-artist">Submit Artist or Band Name</button>-->
-<!--</div>-->
+<!--    When user clicks button, input is passed to function -->
+    <button onclick="getUserInput()" id="submit-album-name" type="button">Button</button>
 
 <div id="album-info"></div>
 <div id="album-tracks"></div>
+
 
 <!--JQuery JavaScript-->
 <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
