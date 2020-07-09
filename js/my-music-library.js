@@ -24,3 +24,11 @@ function getAlbumInfo(artistName, albumTitle) {
         $("#album-tracks").html("Artist: " + data.album.artist);
     });
 }
+
+const LastFM = require('last-fm')
+const lastfm = new LastFM('lastFmApiKey', { userAgent: 'MyApp/1.0.0 (http://example.com)' })
+
+lastfm.trackSearch({ q: 'the greatest' }, (err, data) => {
+    if (err) console.error(err)
+    else console.log(data)
+})
